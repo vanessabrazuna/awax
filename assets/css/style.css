@@ -139,6 +139,8 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 10px;
+    text-decoration: none;
+    color: #FFF;
 }
 .banner .sliders-pointers {
     width: 100vw;
@@ -1018,6 +1020,7 @@ input {
     }
     .map-info--item {
         margin-bottom: 2em;
+        text-decoration: none;
     }
     footer {
         height: 45rem;
@@ -1086,8 +1089,8 @@ input {
         position: relative;
         display: block;
         background-color: #B28756;
-        width: 35px;
-        height: 4px;
+        width: 30px;
+        height: 3px;
         transition: .5s ease-in-out;
         margin-left: 10em;
     } 
@@ -1127,6 +1130,8 @@ input {
     }
     .banner h2 {
         font-size: 17px;
+        text-decoration: none;
+        color: #FFF;
     }
     .section-about {
         flex-direction: column;
@@ -1227,6 +1232,7 @@ input {
     }
     .map-info--item {
         margin-bottom: 1.5em;
+        text-decoration: none;
     }
     .map-info--item:last-child {
         margin-bottom: .5em;
