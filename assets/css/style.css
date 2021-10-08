@@ -67,7 +67,37 @@ header {
 /* Main =============================================== */
 
 /* ============================ Interface ================================ */
+.btn-topo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 
+    background-color: #B28756;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.5;
+	transition: opacity ease-in 0.3s;
+}
+
+.btn-topo:hover {
+    opacity: 0.9;
+    transition: opacity ease-in 0.3s;
+}
+.btn-arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 1rem .6rem 1rem .6rem;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #FFF;
+    transform: rotate(45deg);
+}    
 .button {
     display: inline-block;
     background-color: #B28756;
@@ -209,6 +239,9 @@ header {
     font-size: 11px;
     font-weight: 400;
     line-height: 20px;
+}
+.section-about-left .button {
+    margin-left: 15rem;
 }
 .section-about-right {
     width: 500px;
@@ -602,7 +635,7 @@ header {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:30px 0 0 -70px;
+    margin: 30px 0 0 -140px;
 }
 .section-premium .pointer {
     width:13px;
@@ -782,38 +815,10 @@ footer {
     background-color: #000;
     display: flex;
 }
-/* botão de rolagem para cima */
-.footer-button {
-    position: absolute;
-    top: 862%;
-    left: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #B28756;
-    border-radius: 25px;
-    cursor: pointer;
-}
-.footer-button:hover {
-    background-color: #b28756c0;
-}
-.button-arrow {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-top: 11px;
-    border-top: 2px solid #FFF;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid #FFF;
-    transform: rotate(45deg);
-}
 .footer-social-networks {
     display: flex;
     padding: 20px;
-    margin: 3px 0 0 14em;
+    margin: 4rem 0 0 9rem;
 }
 .footer-icon {
     display: inline-flex;
@@ -839,7 +844,7 @@ footer {
     font-weight: 600;
     line-height: 19px;
     padding: 20px;
-    margin-left: 7em;
+    margin: 0 2em;
 }
 .form {
     background-color: #333;
@@ -874,9 +879,7 @@ footer {
     color: #DDD;
     font-size: 11px;
     font-weight: 600;
-    position: absolute;
-    top: 887%;
-    left: 19em;
+    margin: 5.5rem 0 0 2rem;
 }
 .menu_m {
     width: 40px;
@@ -918,9 +921,10 @@ input {
         margin-left: 2em;
         border: 0;
     }
-    .menu li.active a {
-        border: 0;
-        color: #B28756;
+    .menu li a:hover,
+    .menu .active a {
+        border-bottom: none;
+        color: #CCC;
     }
     .menu_mobile {
         position: relative;
@@ -1023,10 +1027,6 @@ input {
         height: 45rem;
         flex-direction: column-reverse;
     }
-    .footer-button {
-        margin: -78em 0 100em 49em;
-        cursor: pointer;
-    }
     .footer-social-networks {
         margin: 50px 0px 7em 20em;
     }  
@@ -1081,6 +1081,11 @@ input {
     .menu li.active a {
         border: 0;
         color: #B28756;
+    }
+    .menu li a:hover,
+    .menu .active a {
+        border-bottom: none;
+        color: #CCC;
     }
     .menu_mobile {
         position: relative;
@@ -1189,6 +1194,9 @@ input {
     .section-premium--left {
         margin: 0 11em 3em 0;
     }
+    .section-about-left .button {
+        margin-left: 6rem;
+    }
     .section-premium--right {
         margin-left: 10em;
     }
@@ -1235,13 +1243,9 @@ input {
         height: 45rem;
         flex-direction: column-reverse;
     }
-    .footer-button {
-        margin: 263rem 0 0 21em;
-        cursor: pointer;
-    }
     .footer-social-networks {
         margin: auto;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
     }  
     .footer-text {
         width: 27em;
@@ -1249,10 +1253,10 @@ input {
         font-size: 15px;
         line-height: 2em;
         padding: 3em;
-        margin: 0 0 3em -1em;
+        margin: 0 0 1em -1em;
     }
     .form {
-        margin: 50px 1% 0 5%;
+        margin: 30px 1% 0 5%;
         width: 90%;
         height: 50%;
     }
@@ -1267,8 +1271,7 @@ input {
         color: #DDD;
         font-size: 10px;
         font-weight: 600;
-        position: absolute;
-        left: 10em;
-        margin-top: 293rem;
+        order: -1;
+        margin: 0 0 3rem 6.5rem;
     }
 }
